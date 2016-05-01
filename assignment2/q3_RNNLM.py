@@ -387,6 +387,19 @@ def generate_text(session, model, config, starting_text='<eos>',
   state = model.initial_state.eval()
   # Imagine tokens as a batch size of one, length of len(tokens[0])
   tokens = [model.vocab.encode(word) for word in starting_text.split()]
+  
+  # Use starting_text to compute the initial_state (LIBIN)
+  for wd in tokens:
+      feed = {model.input_placeholder: np.array([[wd]]),
+              model.initial_state: state,
+              model.dropout_placeholder: 1.0}
+      state, y_pred = session.run([model.final_state, model.predictions[-1]], feed_dict=feed)
+
+  # First word predicted by starting_text
+  # Add it to tokens and use it as input of next step
+  next_word_idx = sample(y_pred[0], temperature=temp)
+  tokens.append(next_word_idx)
+  
   for i in xrange(stop_length):
     ### YOUR CODE HERE
     # input_placeholder is of shape : (batch_size, num_steps)
@@ -460,6 +473,30 @@ def test_RNNLM():
           session, gen_model, gen_config, starting_text=starting_text, temp=1.0))
       starting_text = raw_input('> ')
 
+
+def sample_text():
+    config = Config()
+    gen_config = deepcopy(config)
+    gen_config.batch_size = gen_config.num_steps = 1
+    
+    # We create the training model and generative model
+    with tf.variable_scope('RNNLM') as scope:
+        gen_model = RNNLM_Model(gen_config)
+
+    saver = tf.train.Saver()
+
+    with tf.Session() as session:
+        saver.restore(session, 'ptb_rnnlm.weights')
+        starting_text = 'in palo alto'
+        while starting_text:
+            print ' '.join(generate_sentence(
+                session, gen_model, gen_config, starting_text=starting_text, temp=1.0))
+            starting_text = raw_input('> ')
+
+
+
+
 if __name__ == "__main__":
     test_RNNLM()
 #run_validation()
+#sample_text()
