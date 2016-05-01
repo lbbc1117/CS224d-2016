@@ -1,0 +1,407 @@
+
+(tensorflow) billxiaopang@billxiaangdembp:~/desktop/cs224d-2016/assignment2$ python q3_RNNLM.py
+929589.0 total words with 10000 uniques
+929589.0 total words with 10000 uniques
+Epoch 0
+Training perplexity: 488.187744141
+Validation perplexity: 336.40826416
+Total time: 610.711986065
+Epoch 1
+Training perplexity: 284.35357666
+Validation perplexity: 257.270355225
+Total time: 605.513164997
+Epoch 2
+Training perplexity: 226.217483521
+Validation perplexity: 225.14201355
+Total time: 613.059916019
+Epoch 3
+Training perplexity: 195.78024292
+Validation perplexity: 206.747375488
+Total time: 613.468647957
+Epoch 4
+Training perplexity: 176.196670532
+Validation perplexity: 196.42489624
+Total time: 1227.00348496
+Epoch 5
+Training perplexity: 162.368515015
+Validation perplexity: 188.903213501
+Total time: 748.500683069
+Epoch 6
+Training perplexity: 151.855545044
+Validation perplexity: 183.938858032
+Total time: 645.329849005
+Epoch 7
+Training perplexity: 143.495452881
+Validation perplexity: 180.876327515
+Total time: 610.606364012
+Epoch 8
+Training perplexity: 136.730926514
+Validation perplexity: 178.963256836
+Total time: 608.00900197
+Epoch 9
+Training perplexity: 130.988586426
+Validation perplexity: 177.835769653
+Total time: 630.521420002
+Epoch 10
+Training perplexity: 126.068191528
+Validation perplexity: 177.370925903
+Total time: 605.671866179
+Epoch 11
+Training perplexity: 121.821746826
+Validation perplexity: 177.129364014
+Total time: 605.286592007
+Epoch 12
+Training perplexity: 118.093673706
+Validation perplexity: 177.283233643
+Total time: 604.472619057
+Epoch 13
+Training perplexity: 114.708808899
+Validation perplexity: 177.922714233
+Total time: 604.013025999
+Epoch 14
+Training perplexity: 111.792640686
+Validation perplexity: 178.73248291
+=-==-==-==-==-== 158.287429817
+Test perplexity: 158.093353271
+=-==-==-==-==-=
+in palo alto in group in sales <unk> actions insurance <unk> in usa inc. purchases and because inc. data that vehicles or <eos>
+> ^Z
+[3]+  Stopped                 python q3_RNNLM.py
+(tensorflow) billxiaopang@billxiaangdembp:~/desktop/cs224d-2016/assignment2$ python q3_RNNLM.py
+929589.0 total words with 10000 uniques
+========= Random search  1  ==========
+Hyper set ==> hidden_size :  512  | dropout :  0.96  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 701.034423828
+Validation perplexity: 571.783325195
+Best valid pp so far ==>  571.783 
+
+929589.0 total words with 10000 uniques
+========= Random search  2  ==========
+Hyper set ==> hidden_size :  128  | dropout :  0.81  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 914.357421875
+Validation perplexity: 670.284240723
+Best valid pp so far ==>  571.783 
+
+929589.0 total words with 10000 uniques
+========= Random search  3  ==========
+Hyper set ==> hidden_size :  64  | dropout :  0.5  | learning rate :  0.001
+Epoch 0
+Training perplexity: 601.072753906
+Validation perplexity: 422.141693115
+Best valid pp so far ==>  422.142 
+
+929589.0 total words with 10000 uniques
+========= Random search  4  ==========
+Hyper set ==> hidden_size :  64  | dropout :  0.67  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 1190.43505859
+Validation perplexity: 682.347717285
+Best valid pp so far ==>  422.142 
+
+929589.0 total words with 10000 uniques
+========= Random search  5  ==========
+Hyper set ==> hidden_size :  128  | dropout :  0.58  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 909.526306152
+Validation perplexity: 673.712219238
+Best valid pp so far ==>  422.142 
+
+929589.0 total words with 10000 uniques
+========= Random search  6  ==========
+Hyper set ==> hidden_size :  64  | dropout :  0.53  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 1183.71618652
+Validation perplexity: 683.023864746
+Best valid pp so far ==>  422.142 
+
+929589.0 total words with 10000 uniques
+========= Random search  7  ==========
+Hyper set ==> hidden_size :  128  | dropout :  0.51  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 910.582519531
+Validation perplexity: 675.344238281
+Best valid pp so far ==>  422.142 
+
+929589.0 total words with 10000 uniques
+========= Random search  8  ==========
+Hyper set ==> hidden_size :  64  | dropout :  0.74  | learning rate :  0.001
+Epoch 0
+Training perplexity: 583.661315918
+Validation perplexity: 410.706359863
+Best valid pp so far ==>  410.706 
+
+929589.0 total words with 10000 uniques
+========= Random search  9  ==========
+Hyper set ==> hidden_size :  512  | dropout :  0.87  | learning rate :  0.001
+Epoch 0
+Training perplexity: 388.096160889
+Validation perplexity: 262.961883545
+Best valid pp so far ==>  262.962 
+
+929589.0 total words with 10000 uniques
+========= Random search  10  ==========
+Hyper set ==> hidden_size :  256  | dropout :  0.86  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 789.192321777
+Validation perplexity: 645.812683105
+Best valid pp so far ==>  262.962 
+
+929589.0 total words with 10000 uniques
+========= Random search  11  ==========
+Hyper set ==> hidden_size :  256  | dropout :  0.61  | learning rate :  0.001
+Epoch 0
+Training perplexity: 455.727416992
+Validation perplexity: 312.007202148
+Best valid pp so far ==>  262.962 
+
+929589.0 total words with 10000 uniques
+========= Random search  12  ==========
+Hyper set ==> hidden_size :  512  | dropout :  0.65  | learning rate :  0.001
+Epoch 0
+Training perplexity: 414.131713867
+Validation perplexity: 279.261016846
+Best valid pp so far ==>  262.962 
+
+929589.0 total words with 10000 uniques
+========= Random search  13  ==========
+Hyper set ==> hidden_size :  512  | dropout :  0.72  | learning rate :  0.001
+Epoch 0
+Training perplexity: 403.873413086
+Validation perplexity: 273.621917725
+Best valid pp so far ==>  262.962 
+
+929589.0 total words with 10000 uniques
+========= Random search  14  ==========
+Hyper set ==> hidden_size :  512  | dropout :  0.89  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 705.979736328
+Validation perplexity: 573.830749512
+Best valid pp so far ==>  262.962 
+
+929589.0 total words with 10000 uniques
+========= Random search  15  ==========
+Hyper set ==> hidden_size :  64  | dropout :  0.62  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 1179.70141602
+Validation perplexity: 682.942138672
+Best valid pp so far ==>  262.962 
+
+929589.0 total words with 10000 uniques
+========= Random search  16  ==========
+Hyper set ==> hidden_size :  512  | dropout :  0.56  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 718.789123535
+Validation perplexity: 593.297485352
+Best valid pp so far ==>  262.962 
+
+929589.0 total words with 10000 uniques
+========= Random search  17  ==========
+Hyper set ==> hidden_size :  512  | dropout :  0.92  | learning rate :  0.001
+Epoch 0
+Training perplexity: 378.465637207
+Validation perplexity: 258.797027588
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  18  ==========
+Hyper set ==> hidden_size :  512  | dropout :  0.8  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 711.310546875
+Validation perplexity: 580.42767334
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  19  ==========
+Hyper set ==> hidden_size :  64  | dropout :  0.58  | learning rate :  0.001
+Epoch 0
+Training perplexity: 589.920471191
+Validation perplexity: 419.036346436
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  20  ==========
+Hyper set ==> hidden_size :  512  | dropout :  0.78  | learning rate :  0.001
+Epoch 0
+Training perplexity: 395.64276123
+Validation perplexity: 264.162719727
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  21  ==========
+Hyper set ==> hidden_size :  128  | dropout :  0.94  | learning rate :  0.001
+Epoch 0
+Training perplexity: 475.471343994
+Validation perplexity: 329.603118896
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  22  ==========
+Hyper set ==> hidden_size :  512  | dropout :  0.75  | learning rate :  0.001
+Epoch 0
+Training perplexity: 401.440002441
+Validation perplexity: 271.776611328
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  23  ==========
+Hyper set ==> hidden_size :  512  | dropout :  0.94  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 706.76348877
+Validation perplexity: 574.889282227
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  24  ==========
+Hyper set ==> hidden_size :  256  | dropout :  0.67  | learning rate :  0.001
+Epoch 0
+Training perplexity: 445.11807251
+Validation perplexity: 306.204803467
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  25  ==========
+Hyper set ==> hidden_size :  64  | dropout :  0.62  | learning rate :  0.001
+Epoch 0
+Training perplexity: 600.003173828
+Validation perplexity: 423.1590271
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  26  ==========
+Hyper set ==> hidden_size :  128  | dropout :  0.61  | learning rate :  0.001
+Epoch 0
+Training perplexity: 510.128692627
+Validation perplexity: 355.053741455
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  27  ==========
+Hyper set ==> hidden_size :  256  | dropout :  0.99  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 785.487915039
+Validation perplexity: 640.762817383
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  28  ==========
+Hyper set ==> hidden_size :  64  | dropout :  0.75  | learning rate :  0.001
+Epoch 0
+Training perplexity: 586.47845459
+Validation perplexity: 410.825653076
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  29  ==========
+Hyper set ==> hidden_size :  256  | dropout :  0.7  | learning rate :  0.001
+Epoch 0
+Training perplexity: 441.516845703
+Validation perplexity: 301.841278076
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  30  ==========
+Hyper set ==> hidden_size :  256  | dropout :  0.67  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 788.85333252
+Validation perplexity: 652.22253418
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  31  ==========
+Hyper set ==> hidden_size :  512  | dropout :  0.75  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 709.722595215
+Validation perplexity: 581.02746582
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  32  ==========
+Hyper set ==> hidden_size :  256  | dropout :  0.88  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 789.666992188
+Validation perplexity: 644.917480469
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  33  ==========
+Hyper set ==> hidden_size :  512  | dropout :  0.57  | learning rate :  0.0001
+Epoch 0
+Training perplexity: 716.948242188
+Validation perplexity: 593.995544434
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  34  ==========
+Hyper set ==> hidden_size :  512  | dropout :  0.77  | learning rate :  0.001
+Epoch 0
+Training perplexity: 397.047332764
+Validation perplexity: 268.464996338
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  35  ==========
+Hyper set ==> hidden_size :  256  | dropout :  0.5  | learning rate :  0.001
+Epoch 0
+Training perplexity: 471.372528076
+Validation perplexity: 324.748962402
+Best valid pp so far ==>  258.797 
+
+929589.0 total words with 10000 uniques
+========= Random search  36  ==========
+Hyper set ==> hidden_size :  512  | dropout :  0.64  | learning rate :  0.001
+Epoch 0
+1100 / 1452 : pp = 462.405914307^X^Z
+[4]+  Stopped                 python q3_RNNLM.py
+(tensorflow) billxiaopang@billxiaangdembp:~/desktop/cs224d-2016/assignment2$ python q3_RNNLM.py
+929589.0 total words with 10000 uniques
+929589.0 total words with 10000 uniques
+Epoch 0
+Training perplexity: 381.410339355
+Validation perplexity: 258.804321289
+Total time: 1344.00934005
+Epoch 1
+Training perplexity: 201.140609741
+Validation perplexity: 199.951950073
+Total time: 1338.70771098
+Epoch 2
+Training perplexity: 150.025619507
+Validation perplexity: 179.485931396
+Total time: 1349.27329493
+Epoch 3
+Training perplexity: 121.531936646
+Validation perplexity: 167.794296265
+Total time: 1344.84920502
+Epoch 4
+Training perplexity: 102.463981628
+Validation perplexity: 165.753265381
+Total time: 1341.64901686
+Epoch 5
+Training perplexity: 88.9348526001
+Validation perplexity: 168.156494141
+Total time: 1352.06208992
+Epoch 6
+Training perplexity: 78.5274429321
+Validation perplexity: 171.12121582
+Total time: 1364.95415902
+Epoch 7
+Training perplexity: 70.3874130249
+Validation perplexity: 176.129302979
+=-==-==-==-==-== 152.686111454
+Test perplexity: 152.446182251
+=-==-==-==-==-=
+in palo alto a pat in asia and <eos>
+> china
+china <eos>
+> china   
+china N know N list the themselves may more <unk> and instead on to to to to however <eos>
+> usa
+usa of insured to was as he areas department thousands daikin to furniture a l. u.s. N a. co. by co. <eos>
+> china
+china N enemies that including to at the all when including but <unk> sometimes aimed about presented <eos>
+> new
+new N privilege at prohibit of using hopes to to to to and down may between to to with <eos>
+> to
+to the oversubscribed up documents because ' ad and financing strongly to for to to to to to to because than the he canada a co. to for to from that on problems nationally <eos>
+> 
